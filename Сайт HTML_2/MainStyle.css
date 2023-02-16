@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E2E7EC;
+}
+
+.content{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap:20px ;
+}
+.item {
+    height: 540 px;
+    background: #FFFFFF;
+}
+.item_big{
+background-repeat: no-repeat;
+grid-column: 1/ -2 ;
+background-image: url(Doner3.png) ;
+background-size: 100%;
+padding: 48px;
+display: grid;
+align-content: end ;
+}
+.item_text{
+    padding: 24px;
+}
+.item__date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    color: white;
+
+
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+     0 -1px 1px #000;
+} 
+.item__heading{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+
+color: #1D1D1D;
+}
+.item__heading_white{
+    color: black;
+    text-shadow: 1px 0 1px #ffffff, 
+    0 1px 1px #ffffff, 
+    -1px 0 1px #ffffff, 
+     0 -1px 1px #ffffff;
+}
+
+.logo{
+    background: left / cover url('Logo.png');
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+}
+
+#LoginWindow{
+    position: absolute;
+    right: 30px;
+    border:#000;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: green;
+    color: #fff;
+    padding: 10px 35px;
+}
